@@ -1,0 +1,20 @@
+<div id="map" style="height: 400px; width: 100%; margin: 2em 0;"></div>
+
+<script>
+  function initMap() {
+    const chicago = { lat: 41.8781, lng: -87.6298 };
+    const map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 12,
+      center: chicago,
+    });
+    new google.maps.Marker({
+      position: chicago,
+      map: map,
+      title: "Dr. Ivankovich Clinic",
+    });
+  }
+</script>
+
+<script async
+  src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+</script>

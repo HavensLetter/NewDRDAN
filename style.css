@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  background: #1b1b1b url('assets/bg-texture.png') repeat;
+  color: #f2e6d9;
+}
+
+.hero {
+  background: rgba(0, 0, 0, 0.85);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.overlay h1 {
+  font-size: 2.5rem;
+  border-right: .15em solid #f2e6d9;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 3s steps(40, end) forwards, blink .75s step-end infinite;
+}
+
+@keyframes typing {
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.btn {
+  background: #aa0000;
+  color: white;
+  padding: 0.8em 1.5em;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 1em;
+}
